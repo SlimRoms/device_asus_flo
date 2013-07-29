@@ -77,14 +77,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/asus/flo/kickstart_checker.sh:system/etc/kickstart_checker.sh
 
-# Prebuilt input device calibration files
-PRODUCT_COPY_FILES += \
-	device/asus/flo/touch_dev.idc:system/usr/idc/touch_dev.idc
-
-# TP idc file
-PRODUCT_COPY_FILES += \
-	device/asus/flo/elan-touchscreen.idc:system/usr/idc/elan-touchscreen.idc
-
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
