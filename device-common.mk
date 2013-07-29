@@ -50,29 +50,31 @@ PRODUCT_PACKAGES += \
         librs_jni
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
-	device/asus/flo/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
-	device/asus/flo/WCNSS_qcom_wlan_nv_flo.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_flo.bin \
-	device/asus/flo/WCNSS_qcom_wlan_nv_deb.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_deb.bin \
+	device/asus/flo/config/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
+	device/asus/flo/config/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
+	device/asus/flo/config/WCNSS_qcom_wlan_nv_flo.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_flo.bin \
+	device/asus/flo/config/WCNSS_qcom_wlan_nv_deb.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_deb.bin \
+        device/asus/flo/config/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+	device/asus/flo/config/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
 	device/asus/flo/init.flo.wifi.sh:system/etc/init.flo.wifi.sh
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
-	device/asus/flo/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x \
-	device/asus/flo/audio_policy.conf:system/etc/audio_policy.conf
+	device/asus/flo/config/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
+	device/asus/flo/config/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x \
+	device/asus/flo/config/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/mixer_paths.xml:system/etc/mixer_paths.xml \
-	device/asus/flo/sec_config:system/etc/sec_config
+	device/asus/flo/config/mixer_paths.xml:system/etc/mixer_paths.xml \
+	device/asus/flo/config/sec_config:system/etc/sec_config
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/thermald-flo.conf:system/etc/thermald.conf
+	device/asus/flo/config/thermald-flo.conf:system/etc/thermald.conf
 
 PRODUCT_COPY_FILES += \
 	device/asus/flo/init.flo.usb.rc:root/init.flo.usb.rc \
 	device/asus/flo/ueventd.flo.rc:root/ueventd.flo.rc \
-	device/asus/flo/media_profiles.xml:system/etc/media_profiles.xml \
-	device/asus/flo/media_codecs.xml:system/etc/media_codecs.xml
+	device/asus/flo/config/media_profiles.xml:system/etc/media_profiles.xml \
+	device/asus/flo/config/media_codecs.xml:system/etc/media_codecs.xml
 
 PRODUCT_COPY_FILES += \
 	device/asus/flo/kickstart_checker.sh:system/etc/kickstart_checker.sh
@@ -96,7 +98,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-	device/asus/flo/gps.conf:system/etc/gps.conf
+	device/asus/flo/config/gps.conf:system/etc/gps.conf
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=196608
@@ -159,7 +161,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors
 PRODUCT_COPY_FILES += \
-    device/asus/flo/audio_effects.conf:system/vendor/etc/audio_effects.conf
+    device/asus/flo/config/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 # Monitor device rotation for speaker channel swap
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -204,10 +206,6 @@ PRODUCT_PACKAGES += \
 	libwfcu \
 	conn_init \
 	charger_touch
-
-PRODUCT_PACKAGES += \
-	wpa_supplicant_overlay.conf \
-	p2p_supplicant_overlay.conf
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	drm.service.enabled=true
