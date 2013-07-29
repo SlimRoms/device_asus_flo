@@ -77,17 +77,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/asus/flo/kickstart_checker.sh:system/etc/kickstart_checker.sh
 
-# Prebuilt kl and kcm keymaps
-PRODUCT_COPY_FILES += \
-	device/asus/flo/apq8064-tabla-snd-card_Button_Jack.kl:system/usr/keylayout/apq8064-tabla-snd-card_Button_Jack.kl \
-	device/asus/flo/hs_detect.kl:system/usr/keylayout/hs_detect.kl \
-	device/asus/flo/pmic8xxx_pwrkey.kl:system/usr/keylayout/pmic8xxx_pwrkey.kl \
-	device/asus/flo/keypad_8064.kl:system/usr/keylayout/keypad_8064.kl \
-	device/asus/flo/apq8064-tabla-snd-card_Button_Jack.kcm:system/usr/keychars/apq8064-tabla-snd-card_Button_Jack.kcm \
-	device/asus/flo/hs_detect.kcm:system/usr/keychars/hs_detect.kcm \
-	device/asus/flo/keypad_8064.kcm:system/usr/keychars/keypad_8064.kcm \
-	device/asus/flo/pmic8xxx_pwrkey.kcm:system/usr/keychars/pmic8xxx_pwrkey.kcm
-
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
 	device/asus/flo/touch_dev.idc:system/usr/idc/touch_dev.idc
