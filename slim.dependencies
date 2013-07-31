@@ -1,0 +1,12 @@
+[
+ {
+   "repository":  "SlimRoms/proprietary_vendor_asus",
+   "target_path": "vendor/asus",
+   "branch":      "jb4.3"
+ },
+ {
+   "repository":  "SlimRoms/kernel_asus_flo",
+   "target_path": "kernel/asus/flo",
+   "branch":      "jb4.3"
+ }
+]
