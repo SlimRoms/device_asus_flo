@@ -47,7 +47,7 @@ PRODUCT_COPY_FILES += \
 	device/asus/flo/config/WCNSS_qcom_wlan_nv_deb.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_deb.bin \
         device/asus/flo/config/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
 	device/asus/flo/config/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-	device/asus/flo/init.flo.wifi.sh:system/etc/init.flo.wifi.sh
+	device/asus/flo/rootdir/init.flo.wifi.sh:system/etc/init.flo.wifi.sh
 
 PRODUCT_COPY_FILES += \
 	device/asus/flo/config/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
@@ -62,13 +62,13 @@ PRODUCT_COPY_FILES += \
 	device/asus/flo/config/thermald-flo.conf:system/etc/thermald.conf
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/init.flo.usb.rc:root/init.flo.usb.rc \
-	device/asus/flo/ueventd.flo.rc:root/ueventd.flo.rc \
+	device/asus/flo/rootdir/init.flo.usb.rc:root/init.flo.usb.rc \
+	device/asus/flo/rootdir/ueventd.flo.rc:root/ueventd.flo.rc \
 	device/asus/flo/config/media_profiles.xml:system/etc/media_profiles.xml \
 	device/asus/flo/config/media_codecs.xml:system/etc/media_codecs.xml
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/kickstart_checker.sh:system/etc/kickstart_checker.sh
+	device/asus/flo/rootdir/kickstart_checker.sh:system/etc/kickstart_checker.sh
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -165,7 +165,7 @@ PRODUCT_PACKAGES += \
 	power.msm8960
 
 PRODUCT_COPY_FILES += \
-	device/asus/flo/init.flo.bt.sh:system/etc/init.flo.bt.sh
+	device/asus/flo/rootdir/init.flo.bt.sh:system/etc/init.flo.bt.sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qualcomm.bt.hci_transport=smd
