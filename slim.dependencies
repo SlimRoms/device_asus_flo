@@ -5,6 +5,16 @@
    "branch":      "jb4.3"
  },
  {
+   "repository":  "SlimRoms/proprietary_vendor_broadcom",
+   "target_path": "vendor/broadcom",
+   "branch":      "jb4.3"
+ },
+ {
+   "repository":  "SlimRoms/proprietary_vendor_qcom",
+   "target_path": "vendor/qcom",
+   "branch":      "jb4.3"
+ },
+ {
    "repository":  "SlimRoms/kernel_asus_flo",
    "target_path": "kernel/asus/flo",
    "branch":      "jb4.3"
