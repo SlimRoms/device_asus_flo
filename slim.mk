@@ -24,4 +24,4 @@ PRODUCT_MANUFACTURER := Asus
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 #Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT="google/razor/flo:4.4/KRT160/907817:user/release-keys" PRIVATE_BUILD_DESC="razor-user 4.4 KRT160 907817 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT="google/razor/flo:4.4.2/KOT49H/937116:user/release-keys" PRIVATE_BUILD_DESC="razor-user 4.4.2 KOT49H 937116 release-keys"
