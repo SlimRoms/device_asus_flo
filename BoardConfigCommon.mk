@@ -34,7 +34,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
 TARGET_KERNEL_SOURCE := kernel/asus/flo
 TARGET_KERNEL_CONFIG := slim_flo_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7-13.04/bin/arm-linux-gnueabihf-
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
