@@ -205,3 +205,4 @@
 /system/vendor/lib/libmmstillomx.so
 /system/vendor/lib/liboemcamera.so
 /system/vendor/lib/libqomx_jpegenc.so
+/system/vendor/lib/mediadrm/libwvdrmengine.so
