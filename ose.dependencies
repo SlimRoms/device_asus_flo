@@ -1,30 +1,26 @@
 [
  {
-   "remote": "cm",
-   "repository":  "SlimRoms/proprietary_vendor_asus",
+   "remote": "slim",
+   "repository":  "proprietary_vendor_asus",
    "target_path": "vendor/asus",
-   "branch":      "kk4.4"
-   "revision": "cm-11.0"
+   "revision":      "kk4.4"
  },
  {
-   "remote": "cm",
-   "repository":  "SlimRoms/proprietary_vendor_broadcom",
+   "remote": "slim",
+   "repository":  "proprietary_vendor_broadcom",
    "target_path": "vendor/broadcom",
-   "branch":      "kk4.4"
-   "revision": "cm-11.0"
+   "revision":      "kk4.4"
  },
  {
-   "remote": "cm",
-   "repository":  "SlimRoms/proprietary_vendor_qcom",
+   "remote": "slim",
+   "repository":  "proprietary_vendor_qcom",
    "target_path": "vendor/qcom",
-   "branch":      "kk4.4"
-   "revision": "cm-11:0"
+   "revision":      "kk4.4"
  },
  {
-   "remote": "cm",
-   "repository":  "SlimRoms/kernel_asus_flo",
+   "remote": "slim",
+   "repository":  "kernel_asus_flo",
    "target_path": "kernel/asus/flo",
-   "branch":      "kk4.4"
-   "revision": "cm-11.0"
+   "revision":      "kk4.4"
  }
 ]
