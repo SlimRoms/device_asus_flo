@@ -1,0 +1,6 @@
+[
+  {
+    "repository":  "SlimRoms/kernel_asus_flo",
+    "target_path": "kernel/asus/flo"
+  }
+]
