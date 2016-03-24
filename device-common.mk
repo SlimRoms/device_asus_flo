@@ -276,6 +276,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
 
+# missing props
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.media.effect.bgdropper.adj=0.2 \
+    camera.flash_off=0 \
+    ro.com.widevine.cachesize=16777216 
+
 PRODUCT_PACKAGES += \
     power.flo
 
