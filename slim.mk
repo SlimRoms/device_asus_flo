@@ -9,9 +9,6 @@ PRODUCT_RELEASE_NAME := flo
 # Inherit some common stuff.
 $(call inherit-product, vendor/slim/config/common.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/asus/flo/full_flo.mk)
 
