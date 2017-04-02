@@ -344,10 +344,10 @@ static void power_hint( __attribute__((unused)) struct power_module *module,
     int cpu, ret;
 
     switch (hint) {
-        case POWER_HINT_INTERACTION:
+/*        case POWER_HINT_INTERACTION:
             ALOGV("POWER_HINT_INTERACTION");
             touch_boost();
-            break;
+            break;*/
 #if 0
         case POWER_HINT_VSYNC:
             ALOGV("POWER_HINT_VSYNC %s", (data ? "ON" : "OFF"));
