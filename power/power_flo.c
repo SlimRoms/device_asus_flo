@@ -313,9 +313,9 @@ static void touch_boost()
     snprintf(data, MAX_LENGTH, "1:%d", client);
     rc = sendto(client_sockfd, data, strlen(data), 0,
         (const struct sockaddr *)&client_addr, sizeof(struct sockaddr_un));
-    if (rc < 0) {
-        ALOGE("%s: failed to send: %s", __func__, strerror(errno));
-    }
+//    if (rc < 0) {
+//        ALOGE("%s: failed to send: %s", __func__, strerror(errno));
+//    }
 }
 
 static void power_set_interactive(__attribute__((unused)) struct power_module *module, int on)
@@ -344,10 +344,10 @@ static void power_hint( __attribute__((unused)) struct power_module *module,
     int cpu, ret;
 
     switch (hint) {
-/*        case POWER_HINT_INTERACTION:
+        case POWER_HINT_INTERACTION:
             ALOGV("POWER_HINT_INTERACTION");
             touch_boost();
-            break;*/
+            break;
 #if 0
         case POWER_HINT_VSYNC:
             ALOGV("POWER_HINT_VSYNC %s", (data ? "ON" : "OFF"));
